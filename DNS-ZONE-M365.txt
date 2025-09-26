@@ -1,0 +1,6 @@
+; ===== Microsoft 365 – guestgard.ch =====
+@                       3600 IN TXT   "v=spf1 include:spf.protection.outlook.com -all"
+_dmarc                  3600 IN TXT   "v=DMARC1; p=quarantine; rua=mailto:dmarc@guestgard.ch; ruf=mailto:dmarc@guestgard.ch; fo=1; adkim=s; aspf=s; pct=100"
+selector1._domainkey    3600 IN CNAME selector1-guestgard-ch._domainkey.<tenant>.onmicrosoft.com.
+selector2._domainkey    3600 IN CNAME selector2-guestgard-ch._domainkey.<tenant>.onmicrosoft.com.
+; Falls Vercel als Nameserver verwendet wird, Domain in Vercel verbinden und Anweisungen folgen.

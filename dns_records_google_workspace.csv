@@ -1,0 +1,9 @@
+host,type,priority,value,ttl,notes
+@,MX,1,ASPMX.L.GOOGLE.COM.,3600,Primary MX
+@,MX,5,ALT1.ASPMX.L.GOOGLE.COM.,3600,
+@,MX,5,ALT2.ASPMX.L.GOOGLE.COM.,3600,
+@,MX,10,ALT3.ASPMX.L.GOOGLE.COM.,3600,
+@,MX,10,ALT4.ASPMX.L.GOOGLE.COM.,3600,
+@,TXT,,v=spf1 include:_spf.google.com -all,3600,SPF for Google
+google._domainkey,TXT,,v=DKIM1; k=rsa; p=PASTE_YOUR_2048BIT_PUBLIC_KEY_HERE,3600,DKIM public key (replace)
+_dmarc,TXT,,v=DMARC1; p=quarantine; rua=mailto:dmarc@guestgard.ch; ruf=mailto:dmarc@guestgard.ch; fo=1; adkim=s; aspf=s; pct=100,3600,DMARC policy

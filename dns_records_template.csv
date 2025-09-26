@@ -1,0 +1,7 @@
+host,type,value,ttl,notes
+@,TXT,v=spf1 include:spf.protection.outlook.com -all,3600,SPF (M365)
+_dmarc,TXT,v=DMARC1; p=quarantine; rua=mailto:dmarc@guestgard.ch; ruf=mailto:dmarc@guestgard.ch; fo=1; adkim=s; aspf=s; pct=100,3600,DMARC policy
+selector1._domainkey,CNAME,selector1-guestgard-ch._domainkey.<tenant>.onmicrosoft.com.,3600,DKIM (M365)
+selector2._domainkey,CNAME,selector2-guestgard-ch._domainkey.<tenant>.onmicrosoft.com.,3600,DKIM (M365)
+@,TXT,v=spf1 include:_spf.google.com -all,3600,SPF (Google)
+google._domainkey,TXT,v=DKIM1; k=rsa; p=MIIBI...,3600,DKIM (Google) – Platzhalter
