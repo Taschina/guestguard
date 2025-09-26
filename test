@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>guestguard – Gäste melden</title>
+  <meta name="description" content="Guest guard – Problematische Gäste melden: Name, Vorname, Geburtsdatum, Grund, bezahlt/nicht bezahlt, Bemerkung." />
+  <style>
+    :root { --bg:#0b1020; --ink:#eef2ff; --muted:#a7b0c4; --primary:#4da3ff; --panel:#0f1730; --line:#1d2540; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 20px; }
+    header, footer { position: sticky; top:0; z-index:10; background:#0b1020cc; backdrop-filter: blur(8px); border-bottom:1px solid var(--line); }
+    header .inner, footer .inner { max-width: 860px; margin: 0 auto; padding: 14px 20px; display:flex; align-items:center; justify-content:space-between; }
+    .brand
